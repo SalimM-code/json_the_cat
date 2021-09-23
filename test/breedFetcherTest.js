@@ -21,12 +21,12 @@ describe('fetchBreedDescription', () => {
   it('returns no description when an inavlid breedName is passed', (done) => {
     fetchBreedDescription('salim', (err, desc) => {
 
-      assert.equal(err, null)
+      assert.equal(err, null);
       const expectedDesc = null;
 
       assert.equal(expectedDesc, desc);
 
       done();
-    })
-  })
+    });
+  });
 });
